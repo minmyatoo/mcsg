@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      စင်္ကာပူရှိ မြန်မာနိုင်ငံသားများအတွက် အခမဲ့ သတင်းအချက်အလက်များ
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #ecf0f1;
+        --accent-color: #e74c3c;
+        --text-color: #34495e;
+        --background-color: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Padauk", sans-serif;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        line-height: 1.6;
+      }
+
+      .side-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 80px;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        z-index: 1000;
+      }
+
+      .side-nav a {
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        transition: color 0.3s ease;
+      }
+
+      .side-nav a:hover {
+        color: var(--accent-color);
+      }
+
+      .content {
+        margin-left: 80px;
+        padding: 40px;
+      }
+
+      section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 60px 0;
+      }
+
+      h1,
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: var(--primary-color);
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-bottom: 30px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+        padding: 12px 24px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #c0392b;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .card {
+        background-color: var(--secondary-color);
+        padding: 30px;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+      }
+
+      .social-links {
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: var(--accent-color);
+      }
+
+      #notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .side-nav {
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 0;
+        }
+
+        .side-nav a {
+          margin: 0;
+        }
+
+        .content {
+          margin-left: 0;
+          margin-top: 60px;
+          padding: 20px;
+        }
+
+        section {
+          padding: 40px 0;
+        }
+
+        h1,
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="side-nav">
+      <a href="#home"><i class="fas fa-home"></i></a>
+      <a href="#info"><i class="fas fa-info-circle"></i></a>
+      <a href="#work"><i class="fas fa-briefcase"></i></a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#health"><i class="fas fa-heartbeat"></i></a>
+      <a href="#community"><i class="fas fa-users"></i></a>
+    </nav>
+
+    <div class="content">
+      <section id="home">
+        <h1>စင်္ကာပူရှိ မြန်မာနိုင်ငံသားများအတွက် အခမဲ့ သတင်းအချက်အလက်များ</h1>
+        <p>
+          ဤဝဘ်ဆိုဒ်သည် စင်္ကာပူရှိ မြန်မာနိုင်ငံသားများအတွက် အသုံးဝင်သော အခမဲ့
+          သတင်းအချက်အလက်များနှင့် အရင်းအမြစ်များကို ပေးဆောင်ရန် ရည်ရွယ်ပါသည်။
+        </p>
+        <a href="#info" class="btn">ပိုမိုလေ့လာရန်</a>
+      </section>
+
+      <section id="info">
+        <h2>အထွေထွေ သတင်းအချက်အလက်များ</h2>
+        <h3>အရေးကြီး လင့်များ</h3>
+        <ul>
+          <li>
+            <a href="https://www.mom.gov.sg" target="_blank"
+              >စင်္ကာပူ လူ့စွမ်းအားဝန်ကြီးဌာန</a
+            >
+          </li>
+          <li>
+            <a href="https://www.ica.gov.sg" target="_blank"
+              >စင်္ကာပူ လူဝင်မှုကြီးကြပ်ရေးနှင့် စစ်ဆေးရေးအာဏာပိုင်</a
+            >
+          </li>
+          <li>
+            <a href="https://www.mfa.gov.sg" target="_blank"
+              >စင်္ကာပူ နိုင်ငံခြားရေးဝန်ကြီးဌာန</a
+            >
+          </li>
+        </ul>
+        <h3>မြန်မာသံရုံး</h3>
+        <p>လိပ်စာ: 15 St Martin's Drive, Singapore 257996</p>
+        <p>ဖုန်း: +65 6735 0209</p>
+        <p>အီးမေးလ်: ambassador@myanmarembassy.sg</p>
+      </section>
+
+      <section id="work">
+        <h2>အလုပ်အကိုင်ဆိုင်ရာ သတင်းအချက်အလက်များ</h2>
+        <h3>အလုပ်ရှာဖွေရေး ဝဘ်ဆိုဒ်များ</h3>
+        <ul>
+          <li>
+            <a href="https://www.mycareersfuture.gov.sg" target="_blank"
+              >MyCareersFuture</a
+            >
+          </li>
+          <li>
+            <a href="https://www.jobstreet.com.sg" target="_blank"
+              >JobStreet Singapore</a
+            >
+          </li>
+        </ul>
+        <h3>အလုပ်သမား အခွင့်အရေးများ</h3>
+        <p>
+          စင်္ကာပူတွင် အလုပ်လုပ်ကိုင်နေသော မြန်မာနိုင်ငံသားများအတွက်
+          အခွင့်အရေးနှင့် တာဝန်ဝတ္တရားများကို လေ့လာပါ။
+        </p>
+        <a href="#" class="btn" id="workRightsBtn">ပိုမိုလေ့လာရန်</a>
+      </section>
+
+      <section id="education">
+        <h2>ပညာရေးဆိုင်ရာ အခွင့်အလမ်းများ</h2>
+        <h3>ဘာသာစကား သင်တန်းများ</h3>
+        <ul>
+          <li>
+            <a href="https://www.pa.gov.sg" target="_blank"
+              >People's Association - အင်္ဂလိပ်ဘာသာစကား သင်တန်းများ</a
+            >
+          </li>
+          <li>
+            <a href="https://www.suss.edu.sg" target="_blank"
+              >Singapore University of Social Sciences -
+              အရွယ်ရောက်ပြီးသူများအတွက် သင်တန်းများ</a
+            >
+          </li>
+        </ul>
+        <h3>ကျွမ်းကျင်မှု မွမ်းမံသင်တန်းများ</h3>
+        <p>
+          စင်္ကာပူရှိ ကျွမ်းကျင်မှု မွမ်းမံသင်တန်းများနှင့် ပတ်သက်သော
+          သတင်းအချက်အလက်များကို လေ့လာပါ။
+        </p>
+        <a href="#" class="btn" id="skillsUpgradeBtn">ပိုမိုလေ့လာရန်</a>
+      </section>
+
+      <section id="health">
+        <h2>ကျန်းမာရေးစောင့်ရှောက်မှု</h2>
+        <h3>အရေးပေါ်ဖုန်းနံပါတ်များ</h3>
+        <ul>
+          <li>အရေးပေါ်ဆေးဝါးကုသမှု: 995</li>
+          <li>ရဲ အရေးပေါ်: 999</li>
+        </ul>
+        <h3>ဆေးရုံများ</h3>
+        <ul>
+          <li>Singapore General Hospital: +65 6222 3322</li>
+          <li>Tan Tock Seng Hospital: +65 6256 6011</li>
+        </ul>
+        <h3>ကျန်းမာရေး အာမခံ</h3>
+        <p>စင်္ကာပူတွင် နေထိုင်သူများအတွက် ကျန်းမာရေး အာမခံအကြောင်း လေ့လာပါ။</p>
+        <a href="#" class="btn" id="healthInsuranceBtn">ပိုမိုလေ့လာရန်</a>
+      </section>
+
+      <section id="community">
+        <h2>အသိုင်းအဝိုင်းဆိုင်ရာ အချက်အလက်များ</h2>
+        <h3>မြန်မာစားသောက်ဆိုင်များ</h3>
+        <ul>
+          <li>
+            Peninsula Plaza - မြန်မာစားသောက်ကုန်နှင့်
+            စားသောက်ဆိုင်များစွာရှိသည့် စင်္ကာပူရှိ "Little Myanmar"
+          </li>
+          <li>Mamak Culture - 50 East Coast Road, Roxy Square</li>
+        </ul>
+        <h3>မြန်မာဘုရားကျောင်းများ</h3>
+        <ul>
+          <li>Burmese Buddhist Temple - 14 Tai Gin Road, Singapore 327873</li>
+        </ul>
+        <h3>အသိုင်းအဝိုင်း အဖွဲ့အစည်းများ</h3>
+        <p>
+          စင်္ကာပူရှိ မြန်မာအသိုင်းအဝိုင်း အဖွဲ့အစည်းများနှင့် ပတ်သက်သော
+          သတင်းအချက်အလက်များကို လေ့လာပါ။
+        </p>
+        <a href="#" class="btn" id="communityGroupsBtn">ပိုမိုလေ့လာရန်</a>
+      </section>
+
+      <footer>
+        <p>
+          &copy; 2024 စင်္ကာပူရှိ မြန်မာနိုင်ငံသားများအတွက် အခမဲ့
+          သတင်းအချက်အလက်များ။ မူပိုင်ခွင့်များရှိသည်။
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <div id="notification">သတင်းအချက်အလက်များ မကြာမီ ရရှိနိုင်ပါမည်။</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Smooth scrolling for navigation
+        const navLinks = document.querySelectorAll(".side-nav a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+
+        // Function to show notification
+        function showNotification(message) {
+          const notification = document.getElementById("notification");
+          notification.textContent = message;
+          notification.style.display = "block";
+          setTimeout(() => {
+            notification.style.display = "none";
+          }, 3000);
+        }
+
+        // Event listeners for "Learn More" buttons
+        document
+          .getElementById("workRightsBtn")
+          .addEventListener("click", (e) => {
+            e.preventDefault();
+            showNotification(
+              "အလုပ်သမား အခွင့်အရေးများဆိုင်ရာ သတင်းအချက်အလက်များ မကြာမီ ရရှိနိုင်ပါမည်။"
+            );
+          });
+
+        document
+          .getElementById("skillsUpgradeBtn")
+          .addEventListener("click", (e) => {
+            e.preventDefault();
+            showNotification(
+              "ကျွမ်းကျင်မှု မွမ်းမံသင်တန်းများဆိုင်ရာ သတင်းအချက်အလက်များ မကြာမီ ရရှိနိုင်ပါမည်။"
+            );
+          });
+
+        document
+          .getElementById("healthInsuranceBtn")
+          .addEventListener("click", (e) => {
+            e.preventDefault();
+            showNotification(
+              "ကျန်းမာရေး အာမခံဆိုင်ရာ သတင်းအချက်အလက်များ မကြာမီ ရရှိနိုင်ပါမည်။"
+            );
+          });
+
+        document
+          .getElementById("communityGroupsBtn")
+          .addEventListener("click", (e) => {
+            e.preventDefault();
+            showNotification(
+              "အသိုင်းအဝိုင်း အဖွဲ့အစည်းများဆိုင်ရာ သတင်းအချက်အလက်များ မကြာမီ ရရှိနိုင်ပါမည်။"
+            );
+          });
+      });
+    </script>
+  </body>
+</html>
